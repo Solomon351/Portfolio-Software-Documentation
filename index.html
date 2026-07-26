@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PabTech | Solomon Ugwuibe - Full Stack Developer</title>
+    <link rel="stylesheet" href="./css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+
+    <!-- Header / Navigation -->
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-gray-200/50 backdrop-blur-2xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#home" class="flex items-center space-x-2 group">
+                    <div class="w-10 h-10 bg-gradient-to-br from-pabtech-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-pabtech-500/30 transition-all duration-300">
+                        <span class="text-white font-bold text-xl font-display">P</span>
+                    </div>
+                    <span class="text-2xl font-bold tracking-tight text-gray-300">
+                        Pab<span class="text-pabtech-600">Tech</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link text-gray-700 hover:text-pabtech-600 hover:text-blue-800 transition-colors duration-300 font-medium">Home</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-pabtech-600 hover:text-blue-800 transition-colors duration-300 font-medium">About</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-pabtech-600 hover:text-blue-800 transition-colors duration-300 font-medium">Projects</a>
+                    <a href="#skills" class="nav-link text-gray-700 hover:text-pabtech-600 hover:text-blue-800 transition-colors duration-300 font-medium">Skills</a>
+                    <a href="#contact" class="nav-link text-gray-700 hover:text-pabtech-600 hover:text-blue-800 transition-colors duration-300 font-medium">Contact</a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-gray-700 hover:bg-gray-100 transition-colors">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-lg border-t border-gray-200">
+            <div class="  px-4 py-6 space-y-4">
+                <a href="#home" class="block text-gray-700 hover:text-pabtech-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-all">Home</a>
+                <a href="#about" class="block text-gray-700 hover:text-pabtech-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-all">About</a>
+                <a href="#projects" class="block text-gray-700 hover:text-pabtech-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-all">Projects</a>
+                <a href="#skills" class="block text-gray-700 hover:text-pabtech-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-all">Skills</a>
+                <a href="#contact" class="block text-gray-700 hover:text-pabtech-600 font-medium py-2 px-4 rounded-lg hover:bg-gray-50 transition-all">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="w-full hero-bg bg-center bg-no-repeat min-h-screen flex items-center relative pt-20">
+        <!-- Floating decorative shapes -->
+        <div class="floating-shape w-72 h-72 top-20 left-10 opacity-30"></div>
+        <div class="floating-shape w-96 h-96 bottom-20 right-10 opacity-20" style="animation-delay: 5s;"></div>
+        <div class="floating-shape w-48 h-48 top-1/2 left-1/3 opacity-25" style="animation-delay: 10s;"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="max-w-3xl">
+                <div class="mb-6 inline-flex items-center px-4 py-2 rounded-full bg-white/10 border border-white/20 text-black/90 text-sm font-medium backdrop-blur-sm">
+                    <span class="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
+                    Available for new opportunities
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Hello I'm <span class="gradient-text">Solomon</span>
+                </h1>
+
+                <p class="text-xl md:text-2xl text-gray-400 mb-10 leading-relaxed max-w-2xl">
+                    Turning ideas into interactive websites through code, creativity, and continuous learning
+                </p>
+
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pabtech-500 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-pabtech-500/30 transition-all duration-300 transform hover:-translate-y-1">
+                        <i class="fas fa-paper-plane mr-2"></i>
+                        Get In Touch
+                    </a>
+                    <a href="https://github.com/Solomon351/Resume-CV.git" class="inline-flex items-center px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 text-white font-semibold rounded-xl hover:bg-white/20 transition-all duration-300">
+                        <i class="fas fa-download mr-2"></i>
+                        Download CV
+                    </a>
+                </div>
+
+                <div class="mt-16 flex items-center space-x-8 text-gray-400">
+                    <a href="https://github.com/Solomon351" class="hover:text-white transition-colors"><i class="fab fa-github text-2xl"></i></a>
+                    <a href="https://www.linkedin.com/in/solomon-ugwuibe-0077943a9/" class="hover:text-white transition-colors"><i class="fab fa-linkedin text-2xl"></i></a>
+                    <a href="https://x.com/s_ugwuibe" class="hover:text-white transition-colors"><i class="fab fa-twitter text-2xl"></i></a>
+                    <div class="h-px w-20 bg-gray-700"></div>
+                    <span class="text-sm">Follow my journey</span>
+                </div>
+            </div>
+        </div>
+        <div class="w-full h-full absolute top-0 left-0 bg-linear-to-t from-black to-red-950/10"></div>
+
+
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#about" class="text-white/50 hover:text-white transition-colors">
+                <i class="fas fa-chevron-down text-2xl"></i>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Video Card Section -->
+    <section>
+        <video class="w-9/10 mx-auto my-12 py-24 bg-black max-w-2xl rounded-lg shadow-lg flex " controls>
+            <source src="./video/Video prompt.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-pabtech-600 font-semibold tracking-wider uppercase text-sm">About Me</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2">Who I Am</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pabtech-500 to-indigo-600 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <!-- Left: Image -->
+                <div class="reveal">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gradient-to-br from-pabtech-500 to-indigo-600 rounded-3xl transform rotate-3 opacity-20"></div>
+                        <div class="relative overflow-hidden rounded-3xl border-4 border-pabtech-100 shadow-2xl">
+                            <img src="./images/TZSP8161.JPG" 
+                                 alt="Solomon Ugwuibe" class="w-full h-[500px] object-cover hover:scale-105 transition-transform duration-700">
+                        </div>
+                        <!-- Floating badge -->
+                        <div class="absolute -bottom-6 -right-6 bg-white rounded-2xl shadow-xl p-4 border border-gray-100">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-12 h-12 bg-pabtech-100 rounded-xl flex items-center justify-center">
+                                    <i class="fas fa-code text-pabtech-600 text-xl"></i>
+                                </div>
+                                <div>
+                                    <p class="text-2xl font-bold text-gray-900">2+</p>
+                                    <p class="text-sm text-gray-500">Years Experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right: Content -->
+                <div class="reveal space-y-6">
+                    <h3 class="text-3xl font-bold text-gray-900">
+                        Hi, I'm <span class="text-pabtech-600">Ugwuibe Solomon Ebuka</span>
+                    </h3>
+                    <p class="text-lg text-gray-600 leading-relaxed">
+                        A passionate <span class="font-semibold text-gray-900">Full Stack Developer</span> from Enugu State, Nigeria. I enjoy transforming ideas into functional, responsive, and user-friendly web applications.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        My journey in technology is driven by curiosity, continuous learning, and a desire to solve real-world problems through code. I have experience working with HTML, CSS, Tailwind CSS, Git, and GitHub, and I am constantly expanding my skills in both frontend and backend development.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        Beyond coding, I believe in consistency and growth. Through my <span class="font-semibold text-pabtech-600">60-Day Build in Public</span> challenge, I share my learning process, projects, and experiences as I continue developing my expertise in software engineering.
+                    </p>
+                    <p class="text-gray-600 leading-relaxed">
+                        I am always excited to take on new challenges, collaborate with others, and create digital solutions that make a meaningful impact.
+                    </p>
+
+                    <div class="flex flex-wrap gap-3 pt-4">
+                        <span class="px-4 py-2 bg-pabtech-50 text-pabtech-700 rounded-full text-sm font-medium border border-pabtech-100">Full Stack</span>
+                        <span class="px-4 py-2 bg-indigo-50 text-indigo-700 rounded-full text-sm font-medium border border-indigo-100">Responsive Design</span>
+                        <span class="px-4 py-2 bg-purple-50 text-purple-700 rounded-full text-sm font-medium border border-purple-100">Problem Solver</span>
+                        <span class="px-4 py-2 bg-green-50 text-green-700 rounded-full text-sm font-medium border border-green-100">Continuous Learner</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-24 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-pabtech-600 font-semibold tracking-wider uppercase text-sm">Portfolio</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2">My Projects</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pabtech-500 to-indigo-600 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">A collection of projects that showcase my skills and passion for building impactful digital solutions.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="./images/lion-image.jpg" alt="Explore Platform" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                            <div class="flex space-x-3">
+                                <a href="https://github.com/Solomon351/E-Book-King-Of-The-Forest.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
+                                <a href="https://www.amazon.com/dp/B0H8M9FKFV" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">E-Book</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique atque mollitia recusandae, odit saepe porro commodi</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">NLP</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">AI</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">PROMPT</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Designed UI in Figma, built with modern CSS, deployed on Vercel</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="./images/image.png" alt="Technology website" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                            <div class="flex space-x-3">
+                                <a href="https://github.com/Solomon351/Mega-Chicken-Sentiment-Analysis.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
+                                <a href="/html/mega_chicken_report.html" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sentiment Analysis</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Sentiment Analysis build for mega chicken Restaurant, that analyzed the Emotion and mixed feeling customers get.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">NLP </span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">LLM</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Built with LLM </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="./images/podcast_cover_messi_ronaldo.png" alt="Portfolio Website" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                            <div class="flex space-x-3">
+                                <a href="https://github.com/Solomon351/PabTech-Portfolio-website.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
+                                <a href="https://solomon351.github.io/PabTech-Portfolio-website/" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">PodCast</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">A responsive personal portfolio showcasing projects, skills, and contact information with modern animations and clean design.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">NLP</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">AI</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Vibe Coding</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Custom design, mobile-first approach, deployed on GitHub Pages</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="./images/MamaPutOnline-website-image.png" alt="Weather Dashboard" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                            <div class="flex space-x-3">
+                                <a href="https://github.com/Solomon351/MamaPutOnline-web.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
+                                <a href="https://solomon351.github.io/MamaPutOnline-web/" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">E-Commerce Website</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">E-commerce is the buying and selling of products or services over the internet. It enables businesses to reach customers online, process transactions securely, and provide convenient shopping experiences anytime and anywhere.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Tailwind</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">GitHub</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Integrated  responsive layout, error handling</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 5 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="./images/Atm-page.png" alt="debit design" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                            <div class="flex space-x-3">
+                                <a href="https://github.com/Solomon351/push-repo.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
+                                <a href="https://solomon351.github.io/push-repo/" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Debit Card</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Project that Explain how the flex flow and grid works.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">CSS</span>
+                            
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Clean typography, markdown support, SEO optimized structure</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6 -->
+                <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
+                    <div class="relative overflow-hidden h-56">
+                        <img src="./images/DigitalBanking.png" alt="DigitalBanking Website" class="w-full h-full object-cover">
+                        <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
+                            <div class="flex space-x-3">
+                                <a href="https://github.com/Solomon351/PabTech-Portfolio-website.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
+                                <a href="https://solomon351.github.io/digital-banking/" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Digital Banking Website</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">A Digtal Banking Website called SolCash </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-medium">JavaScript</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Tailwind</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">GitHub</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Logic-focused project, event handling, clean UI design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-pabtech-600 font-semibold tracking-wider uppercase text-sm">Expertise</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2">My Skills</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pabtech-500 to-indigo-600 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Technologies and tools I use to bring ideas to life.</p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- HTML -->
+                <div class="skill-card bg-gradient-to-br from-orange-50 to-red-50 rounded-2xl p-8 border border-orange-100 shadow-sm hover:shadow-xl reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-orange-500/20">
+                        <i class="fab fa-html5 text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">HTML</h3>
+                    <p class="text-gray-600 text-sm">Semantic markup, accessibility standards, SEO-friendly structure, and modern HTML5 features.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 h-2 bg-orange-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-orange-500 to-red-500 rounded-full" style="width: 95%"></div>
+                        </div>
+                        <span class="ml-3 text-sm font-semibold text-orange-600">95%</span>
+                    </div>
+                </div>
+
+                <!-- CSS -->
+                <div class="skill-card bg-gradient-to-br from-blue-50 to-indigo-50 rounded-2xl p-8 border border-blue-100 shadow-sm hover:shadow-xl reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-blue-500/20">
+                        <i class="fab fa-css3-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">CSS</h3>
+                    <p class="text-gray-600 text-sm">Flexbox, Grid layouts, animations, transitions, responsive design, and custom properties.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 h-2 bg-blue-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 90%"></div>
+                        </div>
+                        <span class="ml-3 text-sm font-semibold text-blue-600">90%</span>
+                    </div>
+                </div>
+
+                <!-- Tailwind CSS -->
+                <div class="skill-card bg-gradient-to-br from-cyan-50 to-teal-50 rounded-2xl p-8 border border-cyan-100 shadow-sm hover:shadow-xl reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-cyan-500 to-teal-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-cyan-500/20">
+                        <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12.001,4.8c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 C13.666,10.618,15.027,12,18.001,12c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C16.337,6.182,14.976,4.8,12.001,4.8z M6.001,12c-3.2,0-5.2,1.6-6,4.8c1.2-1.6,2.6-2.2,4.2-1.8c0.913,0.228,1.565,0.89,2.288,1.624 c1.177,1.194,2.538,2.576,5.512,2.576c3.2,0,5.2-1.6,6-4.8c-1.2,1.6-2.6,2.2-4.2,1.8c-0.913-0.228-1.565-0.89-2.288-1.624 C10.337,13.382,8.976,12,6.001,12z"/>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Tailwind CSS</h3>
+                    <p class="text-gray-600 text-sm">Utility-first workflow, custom configurations, component extraction, and responsive design.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 h-2 bg-cyan-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-cyan-500 to-teal-500 rounded-full" style="width: 88%"></div>
+                        </div>
+                        <span class="ml-3 text-sm font-semibold text-cyan-600">88%</span>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="skill-card bg-gradient-to-br from-gray-50 to-slate-50 rounded-2xl p-8 border border-gray-200 shadow-sm hover:shadow-xl reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-gray-700 to-slate-800 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-gray-700/20">
+                        <i class="fab fa-github text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">GitHub</h3>
+                    <p class="text-gray-600 text-sm">Version control, branching strategies, pull requests, collaborative workflows, and CI/CD.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 h-2 bg-gray-300 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-gray-700 to-slate-800 rounded-full" style="width: 85%"></div>
+                        </div>
+                        <span class="ml-3 text-sm font-semibold text-gray-700">85%</span>
+                    </div>
+                </div>
+
+                <!-- AI Annotation -->
+                <div class="skill-card bg-gradient-to-br from-purple-50 to-pink-50 rounded-2xl p-8 border border-purple-100 shadow-sm hover:shadow-xl reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-purple-500/20">
+                        <i class="fas fa-brain text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">AI Annotation</h3>
+                    <p class="text-gray-600 text-sm">Data labeling, image segmentation, NLP tagging, quality assurance, and model training support.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 h-2 bg-purple-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 82%"></div>
+                        </div>
+                        <span class="ml-3 text-sm font-semibold text-purple-600">82%</span>
+                    </div>
+                </div>
+
+                <!-- JavaScript -->
+                <div class="skill-card bg-gradient-to-br from-yellow-50 to-amber-50 rounded-2xl p-8 border border-yellow-100 shadow-sm hover:shadow-xl reveal">
+                    <div class="w-16 h-16 bg-gradient-to-br from-yellow-400 to-amber-500 rounded-2xl flex items-center justify-center mb-6 shadow-lg shadow-yellow-400/20">
+                        <i class="fab fa-js text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">JavaScript</h3>
+                    <p class="text-gray-600 text-sm">DOM manipulation, ES6+ features, async programming, API integration, and interactive UIs.</p>
+                    <div class="mt-4 flex items-center">
+                        <div class="flex-1 h-2 bg-yellow-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-gradient-to-r from-yellow-400 to-amber-500 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <span class="ml-3 text-sm font-semibold text-yellow-600">80%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-pabtech-400 font-semibold tracking-wider uppercase text-sm">Get In Touch</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-white mt-2">My Contact</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pabtech-400 to-indigo-400 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-400 max-w-2xl mx-auto">Have a project in mind or want to collaborate? I'd love to hear from you.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-20">
+                <!-- Left: Form -->
+                <div class="reveal">
+                    <form class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 space-y-6">
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Full Name</label>
+                            <input type="text" placeholder="Enter your full name" 
+                                   class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-pabtech-500 focus:ring-1 focus:ring-pabtech-500 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Email</label>
+                            <input type="email" placeholder="Example@gmail.com" 
+                                   class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-pabtech-500 focus:ring-1 focus:ring-pabtech-500 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Subject</label>
+                            <input type="text" placeholder="Enter subject" 
+                                   class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-pabtech-500 focus:ring-1 focus:ring-pabtech-500 transition-all">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-medium text-gray-300 mb-2">Message</label>
+                            <textarea rows="4" placeholder="Enter comment" 
+                                      class="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-500 focus:outline-none focus:border-pabtech-500 focus:ring-1 focus:ring-pabtech-500 transition-all resize-none"></textarea>
+                        </div>
+                        <button type="submit" class="w-full py-4 bg-gradient-to-r from-pabtech-500 to-indigo-600 text-white font-semibold rounded-xl hover:shadow-lg hover:shadow-pabtech-500/30 transition-all duration-300 transform hover:-translate-y-1">
+                            <i class="fas fa-paper-plane mr-2"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Right: Contact Info -->
+                <div class="reveal space-y-8">
+                    <div>
+                        <h3 class="text-2xl font-bold text-white mb-6">Connect With Me</h3>
+                        <p class="text-gray-400 leading-relaxed">I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.</p>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-pabtech-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-envelope text-pabtech-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-1">Email</p>
+                                <a href="mailto:ugwuibesolomon@gmail.com" class="text-white hover:text-pabtech-400 transition-colors font-medium">ugwuibesolomon@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-pabtech-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-phone text-pabtech-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-1">Phone</p>
+                                <a href="tel:+2348167358425" class="text-white hover:text-pabtech-400 transition-colors font-medium">08167358425</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-pabtech-500/20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-map-marker-alt text-pabtech-400"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-400 mb-1">Location</p>
+                                <p class="text-white font-medium">Udi, Enugu State, Nigeria</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pt-6 border-t border-white/10">
+                        <p class="text-sm text-gray-400 mb-4">Follow me on social media</p>
+                        <div class="flex space-x-4">
+                            <a href="https://github.com/Solomon351" class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-pabtech-500 hover:border-pabtech-500 transition-all duration-300 group">
+                                <i class="fab fa-github text-xl text-gray-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/solomon-ugwuibe-0077943a9/" class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-pabtech-500 hover:border-pabtech-500 transition-all duration-300 group">
+                                <i class="fab fa-linkedin text-xl text-gray-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://x.com/s_ugwuibe" class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-pabtech-500 hover:border-pabtech-500 transition-all duration-300 group">
+                                <i class="fab fa-twitter text-xl text-gray-400 group-hover:text-white"></i>
+                            </a>
+                            <a href="https://www.instagram.com/solomon_pab/" class="w-12 h-12 bg-white/5 border border-white/10 rounded-xl flex items-center justify-center hover:bg-pabtech-500 hover:border-pabtech-500 transition-all duration-300 group">
+                                <i class="fab fa-instagram text-xl text-gray-400 group-hover:text-white"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 text-gray-400 py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+                <!-- Logo & Description -->
+                <div class="lg:col-span-1">
+                    <a href="#home" class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-gradient-to-br from-pabtech-500 to-indigo-600 rounded-xl flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-xl font-display">P</span>
+                        </div>
+                        <span class="text-2xl font-bold text-white">
+                            Pab<span class="text-pabtech-500">Tech</span>
+                        </span>
+                    </a>
+                    <p class="text-sm leading-relaxed">Building digital experiences with code, creativity, and continuous learning. Let's create something amazing together.</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="hover:text-pabtech-400 hover:text-blue-800 transition-colors text-sm">Home</a></li>
+                        <li><a href="#about" class="hover:text-pabtech-400 hover:text-blue-800 transition-colors text-sm">About</a></li>
+                        <li><a href="#projects" class="hover:text-pabtech-400 hover:text-blue-800 transition-colors text-sm">Projects</a></li>
+                        <li><a href="#skills" class="hover:text-pabtech-400 hover:text-blue-800 transition-colors text-sm">Skills</a></li>
+                        <li><a href="#contact" class="hover:text-pabtech-400 hover:text-blue-800 transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Services</h4>
+                    <ul class="space-y-3">
+                        <li><span class="text-sm">Web Development</span></li>
+                        <li><span class="text-sm">Responsive Design</span></li>
+                        <li><span class="text-sm">UI/UX Implementation</span></li>
+                        <li><span class="text-sm">Frontend Development</span></li>
+                    </ul>
+                </div>
+
+                <!-- Social -->
+                <div>
+                    <h4 class="text-white font-semibold mb-4">Connect</h4>
+                    <div class="flex space-x-3">
+                        <a href="https://github.com/Solomon351" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pabtech-600 transition-colors">
+                            <i class="fab fa-github text-white"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/solomon-ugwuibe-0077943a9/" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pabtech-600 transition-colors">
+                            <i class="fab fa-linkedin text-white"></i>
+                        </a>
+                        <a href="https://x.com/s_ugwuibe" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pabtech-600 transition-colors">
+                            <i class="fab fa-twitter text-white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/solomon_pab/" class="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center hover:bg-pabtech-600 transition-colors">
+                            <i class="fab fa-instagram text-white"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-sm"> 2024 PabTech. All rights reserved. Designed & Built by Solomon Ugwuibe.</p>
+                <div class="flex items-center space-x-2 mt-4 md:mt-0">
+                    <span class="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+                    <span class="text-sm">Available for work</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            if (mobileMenu.classList.contains('hidden')) {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            } else {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            }
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenuBtn.querySelector('i').classList.remove('fa-times');
+                mobileMenuBtn.querySelector('i').classList.add('fa-bars');
+            });
+        });
+
+        // Active navigation highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-link');
+
+        function highlightNav() {
+            const scrollY = window.scrollY;
+
+            sections.forEach(section => {
+                const sectionHeight = section.offsetHeight;
+                const sectionTop = section.offsetTop - 100;
+                const sectionId = section.getAttribute('id');
+
+                if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href') === '#' + sectionId) {
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+
+        window.addEventListener('scroll', highlightNav);
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll('.reveal');
+
+        function reveal() {
+            revealElements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+
+                if (elementTop < windowHeight - 100) {
+                    element.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', reveal);
+        window.addEventListener('load', reveal);
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header shadow on scroll
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 10) {
+                header.classList.add('shadow-md');
+            } else {
+                header.classList.remove('shadow-md');
+            }
+        });
+    </script> -->
+</body>
+</html>
