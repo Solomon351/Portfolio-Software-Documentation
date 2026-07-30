@@ -7,7 +7,57 @@
     <link rel="stylesheet" href="./css/output.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+    <style>
+        --- AI Projects cards ---
+        .ai-project-card {
+            border-radius: 1.25rem;
+            overflow: hidden;
+            background: #ffffff;
+            border: 1px solid rgba(15, 23, 42, 0.08);
+            box-shadow: 0 4px 16px rgba(15, 23, 42, 0.06);
+            transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+            display: flex;
+            flex-direction: column;
+        }
+        .ai-project-card:hover {
+            transform: translateY(-10px) scale(1.015);
+            box-shadow: 0 22px 40px rgba(79, 70, 229, 0.18);
+            border-color: rgba(99, 102, 241, 0.35);
+        }
+        .ai-video-wrap {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 16 / 9;
+            background: #0f172a;
+            overflow: hidden;
+            border-radius: 1.25rem 1.25rem 0 0;
+        }
+        .ai-video-wrap video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform 0.5s ease;
+        }
+        .ai-project-card:hover .ai-video-wrap video {
+            transform: scale(1.04);
+        }
+        .ai-project-grid {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            gap: 2rem;
+        }
+        @media (min-width: 640px) {
+            .ai-project-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+        @media (min-width: 1024px) {
+            .ai-project-grid {
+                grid-template-columns: repeat(3, minmax(0, 1fr));
+            }
+        }
+    </style>
 </head>
 <body class="font-sans antialiased text-gray-800 bg-gray-50">
 
@@ -106,14 +156,6 @@
         </div>
     </section>
 
-
-    <!-- Video Card Section -->
-    <section>
-        <video class="w-9/10 mx-auto h-100 my-12 py-24 bg-black max-w-2xl rounded-lg shadow-lg flex " controls>
-            <source src="./video/AI Learning Journey  Video Script_0p.mp4" type="video/mp4">
-        </video>
-    </section>
-
     <!-- About Section -->
     <section id="about" class="py-24 bg-white">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -190,21 +232,21 @@
                 <!-- Project 1 -->
                 <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
                     <div class="relative overflow-hidden h-56">
-                        <img src="./images/lion-image.jpg" alt="Explore Platform" class="w-full h-full object-cover">
+                        <img src="./images/destination-website-image.png" alt="Explore Platform" class="w-full h-full object-cover">
                         <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                             <div class="flex space-x-3">
-                                <a href="https://github.com/Solomon351/E-Book-King-Of-The-Forest.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
-                                <a href="https://www.amazon.com/dp/B0H8M9FKFV" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                                <a href="https://github.com/Investor-Tochukwu/group-21-css-group-project.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
+                                <a href="https://investor-tochukwu.github.io/group-21-css-group-project/" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
                             </div>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">E-Book</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Bed story E-book that is mearnt for children "King Of The Forest"</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Explore Website</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Explore my website to learn about my journey, view my work, and see how i turn ideas into digital experiences.p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">NLP</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">AI</span>
-                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">PROMPT</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">CSS</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Vanilla-CSS</span>
                         </div>
                         <div class="pt-4 border-t border-gray-100">
                             <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Designed UI in Figma, built with modern CSS, deployed on Vercel</p>
@@ -215,23 +257,23 @@
                 <!-- Project 2 -->
                 <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
                     <div class="relative overflow-hidden h-56">
-                        <img src="./images/image.png" alt="Technology website" class="w-full h-full object-cover">
+                        <img src="./images/Nexus website-image.png" alt="Technology website" class="w-full h-full object-cover">
                         <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                             <div class="flex space-x-3">
-                                <a href="https://github.com/Solomon351/Mega-Chicken-Sentiment-Analysis.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
-                                <a href="/html/mega_chicken_report.html" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
+                                <a href="https://github.com/Solomon351/tailwind-project.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
+                                <a href="https://solomon351.github.io/tailwind-project/" class="px-4 py-2 bg-pabtech-500 text-white rounded-lg text-sm font-medium hover:bg-pabtech-600 transition-colors"><i class="fas fa-external-link-alt mr-1"></i> Live</a>
                             </div>
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Sentiment Analysis</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Sentiment Analysis build for mega chicken Restaurant, that analyzed the Emotion and mixed feeling customers get.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Technology Learning Platform</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">This technology website is designed to share knowledge, resources, and practical insights on web development, programming, artificial intelligence, and modern digital technologies. It aims to help learners, developers, and tech enthusiasts grow their skills, stay updated with industry trends, and build innovative solutions.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">NLP </span>
-                            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">LLM</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Tailwind</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">Git</span>
                         </div>
                         <div class="pt-4 border-t border-gray-100">
-                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Built with LLM </p>
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Built with Html, styled with Tailwind, version controlled with Git</p>
                         </div>
                     </div>
                 </div>
@@ -239,7 +281,7 @@
                 <!-- Project 3 -->
                 <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
                     <div class="relative overflow-hidden h-56">
-                        <img src="./images/podcast_cover_messi_ronaldo.png" alt="Portfolio Website" class="w-full h-full object-cover">
+                        <img src="./images/Portfolio-Website-image.png" alt="Portfolio Website" class="w-full h-full object-cover">
                         <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                             <div class="flex space-x-3">
                                 <a href="https://github.com/Solomon351/PabTech-Portfolio-website.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
@@ -248,12 +290,12 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">PodCast</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">A podcast on Natural Language Processing (NLP), That holds a debates of Ronaldo and Messi.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Portfolio Website</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">A responsive personal portfolio showcasing projects, skills, and contact information with modern animations and clean design.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">NLP</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">AI</span>
-                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Vibe Coding</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">CSS</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Tailwind</span>
                         </div>
                         <div class="pt-4 border-t border-gray-100">
                             <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Custom design, mobile-first approach, deployed on GitHub Pages</p>
@@ -264,7 +306,7 @@
                 <!-- Project 4 -->
                 <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
                     <div class="relative overflow-hidden h-56">
-                        <img src="./images/blog Image.png" alt="Weather Dashboard" class="w-full h-full object-cover">
+                        <img src="./images/MamaPutOnline-website-image.png" alt="Weather Dashboard" class="w-full h-full object-cover">
                         <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                             <div class="flex space-x-3">
                                 <a href="https://github.com/Solomon351/MamaPutOnline-web.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
@@ -273,11 +315,11 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Blog Website</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Blogging Website that covers Udi News and valueable information</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">E-Commerce Website</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">E-commerce is the buying and selling of products or services over the internet. It enables businesses to reach customers online, process transactions securely, and provide convenient shopping experiences anytime and anywhere.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             
-                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Tailwind</span>
                             <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">GitHub</span>
                         </div>
                         <div class="pt-4 border-t border-gray-100">
@@ -289,7 +331,7 @@
                 <!-- Project 5 -->
                 <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
                     <div class="relative overflow-hidden h-56">
-                        <img src="./images/01_Cover_Page.png" alt="debit design" class="w-full h-full object-cover">
+                        <img src="./images/Atm-page.png" alt="debit design" class="w-full h-full object-cover">
                         <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                             <div class="flex space-x-3">
                                 <a href="https://github.com/Solomon351/push-repo.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
@@ -298,11 +340,11 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Guide-Book</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Project that Explain to young children who are about entering high institution, on how to avoid bad lifestyle.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Debit Card</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Project that Explain how the flex flow and grid works.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
-                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">NLP</span>
-                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">VS Code</span>
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">HTML</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">CSS</span>
                             
                         </div>
                         <div class="pt-4 border-t border-gray-100">
@@ -332,6 +374,87 @@
                         </div>
                         <div class="pt-4 border-t border-gray-100">
                             <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Logic-focused project, event handling, clean UI design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Projects Section -->
+    <section id="ai-projects" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 reveal">
+                <span class="text-pabtech-600 font-semibold tracking-wider uppercase text-sm">AI Portfolio</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mt-2">AI Projects</h2>
+                <div class="w-20 h-1 bg-gradient-to-r from-pabtech-500 to-indigo-600 mx-auto mt-4 rounded-full"></div>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">A selection of AI-driven projects where I applied prompt engineering, automation, and machine learning tools to solve real problems.</p>
+            </div>
+
+            <div class="ai-project-grid reveal">
+                <!-- AI Project 1 -->
+                <div class="ai-project-card">
+                    <div class="ai-video-wrap">
+                        <video controls preload="metadata" poster="./images/ai-project-1-poster.png">
+                            <source src="./videos/ai-project-1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Powered Ebook Publishing System</h3>
+                        <p class="text-gray-600 text-sm mb-4">An AI-powered ebook publishing project on bed times story for children </p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">Prompt Engineering</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">OpenAI API</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 mt-auto">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Context-aware conversation flow, escalation logic, deployed as an embeddable widget</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Project 2 -->
+                <div class="ai-project-card">
+                    <div class="ai-video-wrap">
+                        <video controls preload="metadata" poster="./images/ai-project-2-poster.png">
+                            <source src="./videos/ai-project-2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Powered Sentiment Analysis- Mega Chicken Lagos</h3>
+                        <p class="text-gray-600 text-sm mb-4">A business intelligence project that uses Artificial Intelligence to analyze customer feedback, classify sentiments, visualize insights, and generate strategic recommendations for Mega Chicken Ajah, Lagos.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-full text-xs font-medium">LLM Integration</span>
+                            <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">Tailwind CSS</span>
+                            <span class="px-3 py-1 bg-yellow-100 text-yellow-700 rounded-full text-xs font-medium">JavaScript</span>
+                            <span class="px-3 py-1 bg-green-100 text-green-700 rounded-full text-xs font-medium">REST API</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 mt-auto">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Adjustable tone and length controls, copy-to-clipboard export, responsive UI</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Project 3 -->
+                <div class="ai-project-card">
+                    <div class="ai-video-wrap">
+                        <video controls preload="metadata" poster="./images/ai-project-3-poster.png">
+                            <source src="./videos/ai-project-3.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="p-6 flex flex-col flex-1">
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI Image Recognition Tool</h3>
+                        <p class="text-gray-600 text-sm mb-4">Set out to solve manual, error-prone sorting of product images. The tool auto-labels and categorizes uploaded images using a trained vision model, speeding up catalog organization for a small e-commerce store.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">Machine Learning</span>
+                            <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">AI Annotation</span>
+                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Python</span>
+                            <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">GitHub</span>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 mt-auto">
+                            <p class="text-xs text-gray-500"><i class="fas fa-info-circle mr-1"></i> Trained on a labeled image dataset, drag-and-drop upload, batch classification</p>
                         </div>
                     </div>
                 </div>
