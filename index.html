@@ -20,7 +20,7 @@
             flex-direction: column;
         }
         .ai-project-card:hover {
-            transform: translateY(-10px) scale(1.015);
+            transform: translateY(-10px);
             box-shadow: 0 22px 40px rgba(79, 70, 229, 0.18);
             border-color: rgba(99, 102, 241, 0.35);
         }
@@ -39,9 +39,9 @@
             display: block;
             transition: transform 0.5s ease;
         }
-        .ai-project-card:hover .ai-video-wrap video {
-            transform: scale(1.04);
-        }
+        /* .ai-project-card:hover .ai-video-wrap video {
+            transform: scale(1);
+        } */
         .ai-project-grid {
             display: grid;
             grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -160,7 +160,7 @@
      <section class="py-24 bg-gradient-to-br from-gray-900 via-slate-900 to-gray-900 ">
     
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 " >
-                <video controls preload="metadata"  class="max-w-9xl  mx-auto px-4 sm:px-6 lg:px-8 bg-amber-50 rounded-3xl border-4">
+                <video controls  preload="metadata"  class="max-w-9xl  mx-auto px-4 sm:px-6 lg:px-8 bg-amber-50 rounded-3xl border-4">
                     <source src="/assets/video/AI Learning Journey  Video Script_0p.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                 </video>
@@ -343,7 +343,7 @@
                 <!-- Project 5 -->
                 <div class="project-card bg-white rounded-2xl overflow-hidden shadow-lg border border-gray-100 reveal">
                     <div class="relative overflow-hidden h-56">
-                        <img src="./images/Atm-page.png" alt="debit design" class="w-full h-full object-cover">
+                        <img src="./images/Blog poster.jpeg" alt="debit design" class="w-full h-full object-cover">
                         <div class="project-overlay absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex items-end p-6">
                             <div class="flex space-x-3">
                                 <a href="https://github.com/Solomon351/push-repo.git" class="px-4 py-2 bg-white text-gray-900 rounded-lg text-sm font-medium hover:bg-gray-100 transition-colors"><i class="fab fa-github mr-1"></i> Code</a>
@@ -352,8 +352,8 @@
                         </div>
                     </div>
                     <div class="p-6">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">Debit Card</h3>
-                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Project that Explain how the flex flow and grid works.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">Blog Website</h3>
+                        <p class="text-gray-600 text-sm mb-4 line-clamp-2">Enugu Udi Blog Website Where information shares across eastern side and holds them together.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">HTML</span>
                             <span class="px-3 py-1 bg-cyan-100 text-cyan-700 rounded-full text-xs font-medium">CSS</span>
@@ -451,18 +451,17 @@
                 <!-- AI Project 3 -->
                 <div class="ai-project-card">
                     <div class="ai-video-wrap">
-                        <video controls preload="metadata" poster="./images/ai-project-3-poster.png">
-                            <source src="./videos/ai-project-3.mp4" type="video/mp4">
+                        <video controls preload="metadata" poster="/images/Podcast image.jpeg">
+                            <source src="/assets/video/AI PodCast.mp4" type="video/mp4">
                             Your browser does not support the video tag.
                         </video>
                     </div>
                     <div class="p-6 flex flex-col flex-1">
-                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI Image Recognition Tool</h3>
-                        <p class="text-gray-600 text-sm mb-4">Set out to solve manual, error-prone sorting of product images. The tool auto-labels and categorizes uploaded images using a trained vision model, speeding up catalog organization for a small e-commerce store.</p>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2">AI-Powered Podcast</h3>
+                        <p class="text-gray-600 text-sm mb-4">Wiil AI replace developers--or empower them? In this episode, we explore how AI is transforming software development, boosting productivity, and helping developers build smarter, faster solution.</p>
                         <div class="flex flex-wrap gap-2 mb-4">
                             <span class="px-3 py-1 bg-orange-100 text-orange-700 rounded-full text-xs font-medium">Machine Learning</span>
                             <span class="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium">AI Annotation</span>
-                            <span class="px-3 py-1 bg-blue-100 text-blue-700 rounded-full text-xs font-medium">Python</span>
                             <span class="px-3 py-1 bg-gray-100 text-gray-700 rounded-full text-xs font-medium">GitHub</span>
                         </div>
                         <div class="pt-4 border-t border-gray-100 mt-auto">
